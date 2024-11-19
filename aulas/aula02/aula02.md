@@ -9,7 +9,7 @@
 * [Atividades Práticas](#atividades)
 
 <a id="atividades"></a>
-#### Atividade: Crivo de Eratóstenes
+#### Atividade: Teste de Primalidade por Crivo de Eratóstenes
 
 * Escrever um programa `prime.c` para ler do teclado um número inteiro positivo `N` e imprimir
 ```C
