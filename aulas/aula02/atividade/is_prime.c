@@ -15,5 +15,5 @@ bool is_prime(int a)
             return false;
         }
     }
-    return 1;
+    return true;
 }
