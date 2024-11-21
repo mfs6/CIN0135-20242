@@ -1,4 +1,4 @@
-## Aula 03,  18-11-2024 
+## Aula 03,  19-11-2024 
 ### Tipos primitivos, ponteiros, passagem por valor e referência 
 
 ### Roteiro
@@ -20,6 +20,8 @@ Mais alguns...
 
 Retorna a memória ocupada pela variável (em bytes)
 
+**Demo** [./src/types.c](./src/types.c)
+
 #### Tipo ponteiro
 
 Tipo primitivo para endereços de memória.
@@ -28,6 +30,8 @@ Tipo primitivo para endereços de memória.
 
 * `&` endereço de
 * `*` dereference
+
+**Demo** [./src/pointer.c](./src/pointer.c)
 
 #### Passagem de parâmetros
 
