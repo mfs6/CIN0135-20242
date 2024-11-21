@@ -48,7 +48,7 @@ void main()
     // Porém o ponteiro p armazena também um *p que é o valor da variável ao qual p aponta
 
     printf("\nValor de p = %ld\n", p);        // Printa o endereço de memória da variável que p aponta (no debugger apareçe em hexadecimal)
-    printf("Tamanho de p = %ld\n", sizeof(p)); // sizeof = 8 bytes = 64 bits -> tamanho da memoria para cada "bloco de dados"
+    printf("Tamanho de p = %ld\n", sizeof(p)); // sizeof = 8 bytes = 64 bits
     printf("Endereço de p = %ld\n", &p);      // O ponteiro também tem o seu endereço na memória
 
     int k = 1953;
