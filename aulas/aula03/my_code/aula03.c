@@ -47,19 +47,20 @@ void main()
     // O ponteiro (que é p) armazena o endereço da memória onde está o valor da variável, não o próprio valor dela, porque usa o &
     // Porém o ponteiro p armazena também um *p que é o valor da variável ao qual p aponta
 
-    printf("\nValor de p = %ld\n", p);        // Printa o endereço de memória da variável que p aponta (no debugger apareçe em hexadecimal)
+    printf("\nValor de p = %ld\n", p);         // Printa o endereço de memória da variável que p aponta (no debugger apareçe em hexadecimal)
     printf("Tamanho de p = %ld\n", sizeof(p)); // sizeof = 8 bytes = 64 bits
-    printf("Endereço de p = %ld\n", &p);      // O ponteiro também tem o seu endereço na memória
+    printf("Endereço de p = %ld\n", &p);       // O ponteiro também tem o seu endereço na memória
 
     int k = 1953;
-    *p = k; // Coloca o valor de k na variável que o ponteiro p aponta (no caso o i) e não no ponteiro p em si
-
-    printf("\nValor de i = %d\n", i); // Print do i modificado pelo *p = k
 
     printf("\nValor de k = %d\n", k);
     printf("Tamanho de k = %ld\n", sizeof(k));
     printf("Endereço de k = %ld\n", &k); // Endereço na memória de k, porque usa o &
 
+    *p = k; // Coloca o valor de k na variável que o ponteiro p aponta (no caso o i) e não no ponteiro p em si
+
     printf("\nValor de *p = %ld\n", *p); // O valor de *p mudou para o valor de k, antes *p tinha o valor de i
     printf("Endereço de p = %ld\n", &p); // O ponteiro também tem o seu endereço na memória e ele não mudou
+
+    printf("\nValor de i mudou para = %d\n", i); // Print do i modificado pelo *p = k
 }

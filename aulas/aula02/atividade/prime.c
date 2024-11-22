@@ -3,22 +3,17 @@
 
 void main()
 {
+    printf("Digite um número inteiro positivo\nN = ");
     int n;
-    printf("Digite um número\n");
     scanf("%d", &n);
-    /*while (n <= 1)
-    {
-        printf("Número inválido\n");
-        printf("Digite um novo número\n");
-        scanf("%d", &n);
-    }*/
 
     if (is_prime(n) == true)
     {
-        printf("N is prime");
+        printf("N é primo\n");
     }
     else
     {
-        printf("N is not prime");
+        printf("N não é primo\n");
+        //primefactors(n);
     }
 }
