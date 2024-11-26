@@ -33,15 +33,3 @@ Tipo primitivo para endereços de memória.
 
 **Demo** [./src/pointer.c](./src/pointer.c)
 
-#### Passagem de parâmetros
-
-* Nomenclatura: argumentos vs parâmetros formais
-* Passagem por valor
-* Passagem por referência
-
-
-### ATIVIDADES
-
-<a id="atividades"></a>
-#### Atividade: Ordenar três números 
-

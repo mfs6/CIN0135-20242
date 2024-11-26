@@ -11,9 +11,9 @@
 Mês	Dia	Data	Descrição
 Nov	Ter	12	Apresentação, Linguagens compitadas vs interpretadas, introdução à Linguagem C/C++
 	Qui	14	Ambiente de desenvolvimento, depuração e testes
-	Ter	19	Tipos primitivos, ponteiros, passagem por valor e referência
-	Qui	21	Ponteiros e alocação dinâmica: Arrays I
-	Ter	26	Arrays II
+	Ter	19	Tipos primitivos, ponteiros
+	Qui	21	Ponteiros e passagem por valor e referência
+	Ter	26	Ponteiros e alocação dinâmica: Arrays 
 	Qui	28	Laboratório
 Dez	Ter	3	Laboratório
 	Qui	5	ED: Listas simplesmente encadeadas
