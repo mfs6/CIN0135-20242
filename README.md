@@ -13,8 +13,8 @@ Nov	Ter	12	Apresentação, Linguagens compitadas vs interpretadas, introdução 
 	Qui	14	Ambiente de desenvolvimento, depuração e testes
 	Ter	19	Tipos primitivos, ponteiros
 	Qui	21	Ponteiros e passagem por valor e referência
-	Ter	26	Ponteiros e alocação dinâmica: Arrays 
-	Qui	28	Laboratório
+	Ter	26	Ponteiros e alocação dinâmica 
+	Qui	28	Arrays e Structs
 Dez	Ter	3	Laboratório
 	Qui	5	ED: Listas simplesmente encadeadas
 	Ter	10	OO: Classes e encapsulamento
