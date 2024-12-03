@@ -43,7 +43,11 @@ Abr	Ter	1
 
 ### Aulas
 
-* Aula 01
+* [Aula 01](./aulas/aula02/aula01.md)
 * [Aula 02](./aulas/aula02/aula02.md)
 * [Aula 03](./aulas/aula03/aula03.md)
+* [Aula 04](./aulas/aula03/aula04.md)
+* [Aula 05](./aulas/aula03/aula05.md)
+* [Aula 06](./aulas/aula03/aula06.md)
+* [Aula 07](./aulas/aula03/aula07.md)
 
