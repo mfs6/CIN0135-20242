@@ -5,8 +5,6 @@
 
 #### malloc e free 
 
-#### Arrays unidimensionais
-
 
 ### ATIVIDADES
 
