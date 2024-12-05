@@ -19,7 +19,9 @@ void main()
 
         printf("P = ");
         scanf("\n%d", &p);
-    } while (!(2 <= m <= 10) || !(2 <= n <= 10) || !(2 <= p <= 10));
+
+        printf("\n");
+    } while (m < 2 || m > 10 || n < 2 || n > 10 || p < 2 || p > 10);
 
     // matriz_a = calloc(m, sizeof(int)); /* Primeiro aloca as linhas */
     // for (int i = 0; i < m; i++)
