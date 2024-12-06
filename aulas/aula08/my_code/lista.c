@@ -23,12 +23,13 @@ No *create_list()
     //// Cria o ponteiro head (que representa o início da lista) e aloca a memória para ele
     No *head = malloc(sizeof(No));
 
+    //! Inicializar a lista com os valores padrões dos atributos é redundante, pois na linha acima isso já é feito
     //// Define o valor guardado no endereço de memória em que head aponta (na prática cria a primeira caixinha da lista)
-    (*head).index = 0;    //* Adicionado por mim
-    (*head).valor = 1652; //? Por que está (*head) como se fosse um cast?
+    (*head).index = 0; //* É o mesmo que head->index
+    (*head).valor = 0; //* É o mesmo que head->valor
 
     //// Define a próxima caixinha como NULL, já que na criação (inicialização) da lista não tem próximos elementos
-    (*head).next = NULL;
+    (*head).next = NULL; //* É o mesmo que head->next
 
     //// Retorna o início da lista (a primeira caixinha). ou seja, na prática cria de fato a lista
     return head;
@@ -40,15 +41,16 @@ No *create_list()
 void append(No *lista, int valor)
 {
     //// Define um cursor que vai começar a procurar o "tail" (final) da "lista", para inserir o "valor" nele.
-    No *cursor = lista;
+    No *cursor = lista; //* cursor aponta pra lista
 
-    int index = 1; // * Variável pra contar o index
+    int index = 1; //* Variável pra contar o index
 
     //// O cursor itera até achar o ponteiro (*next) que é NULL e então adiciona o "valor" no lugar do NULL
     while (cursor->next != NULL)
     {
-        cursor = cursor->next; /* O normal seria cursor.next, mas o vscode adota essa notação */
-        index++;               //* Incrementa index pra ir contando a posição
+        //* O normal seria cursor.next, mas o vscode adota essa notação
+        cursor = cursor->next; //* Passa para o próximo elemento da lista
+        index++;               //* Incrementa o index pra ir contando a posição
     }
 
     //// Depois de achar onde é NULL, sai do while e começa a inserção do parâmetro "valor"
@@ -59,41 +61,47 @@ void append(No *lista, int valor)
     //// Altera os valores
     tail->index = index;
     tail->valor = valor;
-    tail->next = NULL; //? DEBUG: Essa linha é redundante sempre?
+    tail->next = NULL; //* Linha redundante já que tail->next já é NULL, pois acabou de ser inicializada
 
-    /* Posiciona o cursor já no "tail" que foi definido com NULL logo acima, pra não precisar iterar numa nova chamada da função append */
-    cursor->next = tail;
-    //? Pra que serve essa linha acima? DEBUG: após a execução dela que a lista de fato incorpora a valor da cauda (talvez por causa de No *cursor = lista;)?
+    cursor->next = tail; //* Devido a aritmética de ponteiros, assim que cursor.next recebe tail, lista.next também recebe, pois cursor aponta para lista
 }
 
 void print_list(No *lista) //* Adicionado por mim
 {
     No *cursor = lista;
-
+    //// Iteração igual a de append(), só não tem o ->next pra conseguir printar o ultimo elemento da lista
     while (cursor != NULL)
     {
         printf("Posição: %d, ", cursor->index);
         printf("Valor: %d\n", cursor->valor);
-        cursor = cursor->next;
+        cursor = cursor->next; //* Passa para o próximo elemento da lista
     }
 }
 
 void main()
 {
     //// Começa criando a lista, chamando a função apropriada
-    No *lista = create_list(); //// Nesse momento a lista só tem a primeira caixinha, o head
-
-    print_list(lista); //* Adicionado por mim
+    No *lista = create_list();
+    //// Nesse momento a lista só tem a primeira caixinha, o head, por isso printa os valores iniciais
+    print_list(lista);
 
     printf("\n");
 
     //// Insere valores na lista, através da função append, que insere os valores no final da lista
-    append(lista, 2);
-    append(lista, 3);
-    append(lista, 5);
-    append(lista, 7);
+    append(lista, 126);
+    append(lista, 463);
+    append(lista, 597);
+    append(lista, 850);
+    append(lista, 5650);
+    append(lista, 8532);
+    append(lista, 5850);
+    append(lista, 12850);
+    append(lista, 110);
+    append(lista, 1360);
+    append(lista, 189);
 
-    print_list(lista); //* Adicionado por mim
+    //// Printa a lista com os valores inseridos
+    print_list(lista);
 }
 
 //// Ilustração das caixinhas de uma lista encadeada
@@ -103,7 +111,7 @@ void main()
 // |             |            |             |
 // |             |            |  Ponteiro   |
 // |   index=0   |  Valor=0   |   para o    |
-// |             |            |  próximo = 1|
+// |             |            |  próximo = 1|  Elemento, não index
 // |             |            |             |
 // ------------------------------------------
 
@@ -111,8 +119,8 @@ void main()
 // ------------------------------------------
 // |             |            |             |
 // |             |            |  Ponteiro   |
-// |   index=1   |  valor=2   |   para o    |
-// |             |            |  próximo=2  |
+// |   index=1   | valor=126  |   para o    |
+// |             |            | próximo = 2 |  Elemento, não index
 // |             |            |             |
 // ------------------------------------------
 
@@ -120,8 +128,8 @@ void main()
 // ------------------------------------------
 // |             |            |             |
 // |             |            |  Ponteiro   |
-// |   index=2   |  valor=3   |   para o    |
-// |             |            |  próximo=3  |
+// |   index=2   | valor=463  |   para o    |
+// |             |            | próximo = 3 |  Elemento, não index
 // |             |            |             |
 // ------------------------------------------
 
@@ -129,8 +137,8 @@ void main()
 // ------------------------------------------
 // |             |            |             |
 // |             |            |  Ponteiro   |
-// |   index=3   |  valor=5   |   para o    |
-// |             |            |  próximo=4  |
+// |   index=3   | valor=597  |   para o    |
+// |             |            | próximo = 4 |  Elemento, não index
 // |             |            |             |
 // ------------------------------------------
 
@@ -138,7 +146,7 @@ void main()
 // ------------------------------------------
 // |             |            |             |
 // |             |            |  Ponteiro   |
-// |   index=4   |  valor=7   |   para o    |
+// |   index=4   |  valor=850 |   para o    |
 // |             |            |  próximo =  |
 // |             |            |    NULL     |
 // ------------------------------------------
