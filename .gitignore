@@ -1,2 +1,9 @@
+# Arquivos que não tenham extensão (como os de debug)
+*
+!*.*
+
+# Arquivos de saida
 *.out
+
+# Pasta vscode (arquivos de ambiente local)
 /.vscode
