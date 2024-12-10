@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 //// Define o nó (a caixinha) da lista encadeada (semelhante a Java)
 struct Node
@@ -35,6 +36,13 @@ No *create_list()
     return head;
 }
 
+No *create_list2(int valor)
+{
+    No *head = create_node(valor);
+
+    return head;
+}
+
 //! Lembrar que a lista encadeada é basicamente ponteiros para os nós
 
 //// Define a função que insere elementos no "tail" (final) da lista
@@ -43,7 +51,7 @@ void append(No *lista, int valor)
     //// Define um cursor que vai começar a procurar o "tail" (final) da "lista", para inserir o "valor" nele.
     No *cursor = lista; //* cursor aponta pra lista
 
-    int index = 1; //* Variável pra contar o index
+    int index = 0; //* Variável pra contar o index
 
     //// O cursor itera até achar o ponteiro (*next) que é NULL e então adiciona o "valor" no lugar do NULL
     while (cursor->next != NULL)
@@ -66,6 +74,70 @@ void append(No *lista, int valor)
     cursor->next = tail; //* Devido a aritmética de ponteiros, assim que cursor.next recebe tail, lista.next também recebe, pois cursor aponta para lista
 }
 
+//// Função que acha o valor de uma dada posição na lista
+No *find_pos(No *head, size_t pos)
+{
+    No *cursor = head;
+
+    size_t i = 0; //* Posição inicial
+
+    while (i < pos && cursor->next != NULL)
+    {
+        cursor = cursor->next;
+        i++;
+    }
+    return cursor;
+}
+
+No *find_val(No *head, int valor)
+{
+    No *cursor = head;
+
+    while (cursor->next != NULL && cursor->next->valor != valor)
+    {
+        cursor = cursor->next;
+    }
+    return cursor;
+}
+
+No *insert(No *head, size_t pos, int valor)
+{
+    No *cursor = find_pos(head, pos);
+    No *new = create_node(valor);
+    new->next = cursor->next;
+    cursor->next = new;
+    return cursor;
+}
+
+No *create_node(int valor)
+{
+    No *head = malloc(sizeof(No));
+
+    (*head).index = 0;     //* É o mesmo que head->index
+    (*head).valor = valor; //* É o mesmo que head->valor
+
+    (*head).next = NULL; //* É o mesmo que head->next
+
+    return head;
+}
+
+No *remover(No *cursor)
+{
+    /* if (cursor->next==NULL)
+    {
+        return cursor;
+    } */
+    //* apagado do código "oficial"
+
+    No *removed = cursor->next;
+
+    cursor->next = removed->next; //*cursor.next.next
+    free(removed);
+    return cursor;
+
+    // find_pos(cursor, pos);
+}
+
 void print_list(No *lista) //* Adicionado por mim
 {
     No *cursor = lista;
@@ -83,12 +155,12 @@ void main()
     //// Começa criando a lista, chamando a função apropriada
     No *lista = create_list();
     //// Nesse momento a lista só tem a primeira caixinha, o head, por isso printa os valores iniciais
-    print_list(lista);
+    // print_list(lista);
 
     printf("\n");
 
     //// Insere valores na lista, através da função append, que insere os valores no final da lista
-    append(lista, 126);
+    /* append(lista, 126);
     append(lista, 463);
     append(lista, 597);
     append(lista, 850);
@@ -98,10 +170,65 @@ void main()
     append(lista, 12850);
     append(lista, 110);
     append(lista, 1360);
-    append(lista, 189);
+    append(lista, 189); */
+
+    append(lista, 2);
+    append(lista, 3);
+    append(lista, 5);
+    append(lista, 7);
 
     //// Printa a lista com os valores inseridos
     print_list(lista);
+
+    No *node = NULL;
+    size_t pos = 3;
+
+    node = find_pos(lista, pos);
+
+    if (node->next != NULL)
+    {
+        printf("\n\n\nLista[%d] = %d\n", pos, node->next->valor);
+    }
+    else
+    {
+        printf("\nFora da lista\n");
+    }
+
+    int valor = 2;
+    node = find_val(lista, valor);
+
+    if (node->next != NULL)
+    {
+        printf("\n\n\nValor do No = %d\n", node->next->valor);
+    }
+    else
+    {
+        printf("\nNot found\n");
+    }
+
+    pos = 2;
+    valor = 4;
+    node = insert(lista, pos, valor);
+    if (node->next != NULL)
+    {
+        Printf("\n\n\nValor do No = %d\n", node->next->valor);
+    }
+    else
+    {
+        printf("\nNot found\n");
+    }
+
+    node = find_val(lista, 4);
+    lista = remover(node);
+    if (node->next != NULL)
+    {
+        printf("node val = %d", node->next->valor);
+    }
+    else
+    {
+
+        printf("\nNot found\n");
+    }
 }
 
 //// Ilustração das caixinhas de uma lista encadeada
