@@ -232,7 +232,6 @@ void main()
 }
 
 //// Ilustração das caixinhas de uma lista encadeada
-
 // Elemento 0 (Head) -> Primeiro da lista
 // ------------------------------------------
 // |             |            |             |
