@@ -9,16 +9,16 @@ void insert(No *lista, int valor, int pos)
         cursor = cursor->next;
     }
 
-    if (cursor->index != pos)
+    No *new = create_node(valor);
+    new->index = pos;
+    new->next = cursor->next;
+    cursor->next = new;
+
+    while (cursor->next->next != NULL)
     {
-        append(cursor, valor);
-    }
-    else
-    {
-        No *new = create_node(valor);
-        new->index = pos;
-        new->next = cursor->next;
-        cursor->next = new;
+        cursor->next->index++;
+        cursor->next->valor = cursor->next->valor;
+        cursor = cursor->next;
     }
 }
 
@@ -72,6 +72,7 @@ void print_list(No *lista) //* Adicionado por mim
 {
     No *cursor = lista;
     //// Iteração igual a de append(), só não tem o ->next pra conseguir printar o ultimo elemento da lista
+
     while (cursor != NULL)
     {
         printf("Posição: %d, ", cursor->index);

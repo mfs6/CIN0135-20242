@@ -7,18 +7,20 @@ typedef struct Node No;
 //! Daqui em diante, sempre que for me referir a "struct Node", será por seu apelido "No"
 
 No *create_list();
-
-No *create_list2(int valor);
-No *create_node(int valor);
+//? verificar se pode ter duas funções com o mesmo nome, mas que uma tem parâmetros e a outra não
+No *create_list(int index, int valor);
+No *create_node(int index, int valor);
 
 void find_pos(No *lista, int valor);
 void find_val(No *lista, int pos);
 
-void insert(No *lista, int valor, int pos); //? consertar index do insert
+// TODO consertar index de inserção e deslocamento dos demais nós da lista
+void insert(No *lista, int valor, int pos);
 void append(No *lista, int valor);
-// Remove
+// Remove //TODO adicionar função remover
 
-void print_list(No *lista); //? ou ver se é erro de print
+// TODO fazer printar em ordem crescente, ainda que pule os index sem valor
+void print_list(No *lista);
 
 // gcc lista.h lista.c lista_search.c -> compilou
 // Search herda de io que herda de def que herda do header, assim como o main

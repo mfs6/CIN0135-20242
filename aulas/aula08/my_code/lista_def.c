@@ -32,20 +32,20 @@ No *create_list()
 
 //! Lembrar que a lista encadeada é basicamente ponteiros para os nós
 
-//// Cria uma lista passando um valor pra o ser armazenado no index 0
-No *create_list2(int valor)
+//// Cria uma lista passando um valor pra o ser armazenado no index passado
+No *create_list(int index, int valor)
 {
-    No *head = create_node(valor);
+    No *head = create_node(index, valor);
 
     return head;
 }
 
 //// Basicamente divide a criação da lista em dois metodos, um pro nó e outro pra pegar o nó criado
-No *create_node(int valor)
+No *create_node(int index, int valor)
 {
     No *head = malloc(sizeof(No));
 
-    (*head).index = 0;     //* É o mesmo que head->index
+    (*head).index = index;     //* É o mesmo que head->index
     (*head).valor = valor; //* É o mesmo que head->valor
 
     (*head).next = NULL; //* É o mesmo que head->next
