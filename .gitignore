@@ -1,6 +1,6 @@
 # Arquivos que não tenham extensão (como os de debug) -> ignora todos os arquivos, menos os que tem .
-*
-!*.*
+#*
+#!*.*
 
 # Arquivos de saida
 *.out
