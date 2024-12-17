@@ -18,12 +18,11 @@ Nov	Ter	12	Apresentação, Linguagens compitadas vs interpretadas, introdução 
 Dez	Ter	3	Laboratório
 	Qui	5	ED: Listas simplesmente encadeadas
 	Ter	10	ED: Listas simplesmente encadeadas II
-	Qui	12	OO: Classes e encapsulamento
-	Ter	17	ED: Filas e pilhas
-	Qui	19	OO: Herança
-Jan	Ter	28	OO: Programação genérica (Classes parametrizadas)
-	Qui	30	ED: Arrays dinâmicos
-Fev	Ter	4	OO: Interfaces                                     
+	Ter	17	OO: Classes: abstração e encapsulamento
+	Qui	19	ED: Arrays dinâmicos
+Jan	Ter	28	ED: Filas e pilhas
+	Qui	30  OO: Herança
+Fev	Ter	4	OO: Programação genérica (Classes parametrizadas)
 	Qui	6	Laboratório
 	Ter	11	ED: Tabelas de Dispersão I - conceitos básicos, funções de dispersão
 	Qui	13	ED: Tableas de Dispersão II - resolução de colisão por encadeamento
