@@ -13,7 +13,6 @@ A OOP baseia-se em quatro conceitos centrais:
 Nesta aula vamos nos centrar sobre os dois primeiros. É importante antes destacar que, apesar da OOP ser reconhecida hoje em dia como um paradigma dos mais importantes e populares, ela não foi concebida de maneira acabada e de uma só vez como tal. Ao contrário, os seus princípios básicos e definidores emergiram e foram se sedimentando aos poucos, ao longo da história, com a evolução das técnicas e linguagens de programação. Essas linguagens foram introduzindo os conceitos acima e outros relacionados em diferentes variações, umas mais e outras menos, e com o tempo algumas foram se tornando mais populares, enquanto outros foram sendo abandonados. A palestra a seguir contém uma boa discussão sobre os conceitos básicos e evolução das Linguagens OO.
 
 [**Vídeo:** The Return of Procedural Programming - Richard Feldman](https://youtu.be/vQPHtAxOZZw?si=5ucZjHMC_AmVIsH8)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vQPHtAxOZZw?si=dnX-7a5VPXjc9JlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Abstração e Encapsulamento [[2]](#aula10ref2)
 
