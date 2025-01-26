@@ -36,6 +36,13 @@ No contexto de OOP, **encapsulamento** é a técnica de **empacotar dados** (atr
 - **Encapsulamento**: Foca em **"como"** os dados e métodos estão organizados e protegidos dentro da classe, escondendo detalhes de implementação.
 
 
+### Ilustração: Lista Encadeada
+
+Na aula anterior nós concluímos o código C para uma lista simplesmente encadeada [list.c](../aula09/src/list.c) com as operações de leitura, inserção e remoção. Embora conceitualmente pudéssemos estar pensando na lista como um tipo abstrato de dados com essas operações, na prática o código estava organizado de forma que tínhamos apenas os dados declarados numa `struct Node`, e as operações separadas, em diversas funções, que recebiam referências (ponteiros) para o nó cabeça (sentinela) da lista. Essa forma de organizar o código torna necessário um maior cuidado e disciplina do programador, e exige um pouco mais de conhecimento sobre a estrutura interna da lista. 
+
+O código [list.cpp](srs/list.cpp) corresponde a uma "tradução" desse TAD para OOP em C++.
+
+
 ### Referências
 
 <a id="aula10ref1"></a>[1] [Richard Feldman. The Return of Procedural Programming](https://youtu.be/vQPHtAxOZZw?si=5ucZjHMC_AmVIsH8)

@@ -1,10 +1,16 @@
 #include <iostream>
 
+using namespace std;
+
+
 class Node {
     friend class LinkedList;
 public:
     Node() {val = -1;}
     Node(int v);
+    ~Node() {
+    //    cout << "deleting " << val << endl;
+    }
 private:
     int val;
     Node *next;
@@ -16,22 +22,32 @@ Node::Node(int v) {
 }
 
 
-class LinkedList 
-{
+class LinkedList {
 public:
     LinkedList() {
         head = new Node();
         sz = 0;
     };
+    ~LinkedList();
     void append(int val);
     int size() {
         return sz;
     }
     int operator[](int pos);
+    int remove(int pos);
 private:
     Node *head;
     int sz;
 };
+
+LinkedList::~LinkedList() {
+    Node *cur = head;
+    while (cur != nullptr) {
+        Node *next = cur->next;
+        delete cur;
+        cur = next;
+    }
+}
 
 void LinkedList::append(int val) {
     Node *cur = head;
@@ -53,18 +69,35 @@ int LinkedList::operator[](int pos) {
     return cur->next->val;
 }
 
-using namespace std;
+
+int LinkedList::remove(int pos) {
+    Node *cur = head;
+    int i = 0;
+    while( i < pos && cur->next != nullptr) {
+        cur = cur->next;
+        i++;
+    }
+    Node *to_die = cur->next;
+    cur->next = to_die->next;
+    int ret = to_die->val;
+    delete to_die;
+    sz--;
+    return ret;
+}
+
+
+
 
 int main() {
     LinkedList list;
-    list.append(2);
-    list.append(3);
-    list.append(5);
-    list.append(7);
 
-    for (int i = 0; i < list.size(); i++) {
-        cout << "list[" << i << "] = " << list[i] << endl;
+    size_t n = 1 << 16;
+    for (int i = 1; i<=n; i++) {
+        list.append(2 * i);
     }
+
+    cout << "size = " << list.size();
+
 
 }
 
