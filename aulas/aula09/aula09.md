@@ -127,8 +127,8 @@ Node *insert_at(Node *head, size_t pos, int val) {
 ```
 
 **NOTA**: Se a lista tem tamanho (lógico) `n` (`n+1` nós, incluindo o sentinela):
-* Inserir no início da lista: `insert_cur(head, val) == insert_at(head, 0, val)`
-* Inserir no final da lista: `insert_at(head, n-1, val) == append(head, val)`
+* Inserir no início da lista: `insert_cur(head, val) == insert_at(head, 0, val) == prepend(head, val)`
+* Inserir no final da lista: `insert_at(head, n, val) == append(head, val)`
 
 **IMPORTANTE**: 
 * Uma vez obtida a referência para a posição corrente, inserir um novo elemento nesse posição requer apenas uma quantidade fixa (constante) de operações.

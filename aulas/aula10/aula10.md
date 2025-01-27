@@ -59,24 +59,28 @@ public:
 		sz = 0;
 	};
 	~LinkedList();
-	void append(int val);
 	int size()
 	{
 		return sz;
 	}
 	int operator[](int pos);
+	void insert(int pos, int val);
+	void append(int val);
+	void prepend(int val);
 	int remove(int pos);
 private:
-	Node *head; // pointer to sentinel node
-	int sz;     // list size 
+	Node *locate(int pos);
+	Node *head;
+	int sz;
 };
+
 
 ```
 
 **Explicação:**
 1. **Definição de classe**: É feita com a palavra-chave `class`. No exemplo, `LinkedList` é a classe.
 2. **Atributos**: São variáveis que armazenam os dados do objeto (e.g., `head`, `sz`).
-3. **Métodos**: São funções que definem os comportamentos do objeto (e.g., `size()`, `append()`, etc.).
+3. **Métodos**: São funções que definem os comportamentos do objeto (e.g., `size()`, `insert()`, etc.).
 4. **Modificadores de acesso**: 
    - `private`: Somente acessível dentro da classe.
    - `public`: Acessível fora da classe.
@@ -123,15 +127,12 @@ C++ permite ao programador (re)definir o significado de operadores da linguagem 
 ```cpp
 int LinkedList::operator[](int pos)
 {
-	Node *cur = head;
-	int i = 0;
-	while ( i < pos && cur->next != nullptr) {
-		cur = cur->next;
-		i++;
-	}
-	return cur->next->val;
+	assert(pos < sz);
+	return locate(pos)->next->val;
 }
 ```
+
+Repare que, nesta versão, usamos o método privado `LinkedList::locate(int pos)` para obter uma referência interna (ponteiro) para a posição desejada. Esta mesma função é usada nos demais métodos de inserção e remoção.
 
 
 

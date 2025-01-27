@@ -74,6 +74,11 @@ Node *insert_at(Node *head, size_t pos, int val)
 	return cur;
 }
 
+void prepend(Node *head, int val)
+{
+	insert_cur(head, val);
+}
+
 
 Node *delete (Node *cur)
 {
