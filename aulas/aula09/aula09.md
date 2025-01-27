@@ -53,6 +53,10 @@ Node *find_val(Node *head, int val) {
 }
 ```
 
+**IMPORTANTE**: 
+* Localizar um elemento, seja por posição, seja por valor, requer percorrer a lista desde o início, um elemento de cada vez, até alcançar a posição pretendida.
+* No pior caso, isso pode exigir visitar todos os elementos da lista.
+
 #### Inserção
 
 Para inserir um novo nó na posição dada por um cursor `cur`:
@@ -126,6 +130,10 @@ Node *insert_at(Node *head, size_t pos, int val) {
 * Inserir no início da lista: `insert_cur(head, val) == insert_at(head, 0, val)`
 * Inserir no final da lista: `insert_at(head, n-1, val) == append(head, val)`
 
+**IMPORTANTE**: 
+* Uma vez obtida a referência para a posição corrente, inserir um novo elemento nesse posição requer apenas uma quantidade fixa (constante) de operações.
+* Porém, para chegar à posição desejada, precisamos percorrer a lista como explicado acima.
+
 #### Remoção
 
 Para remover um nó válido da posição corrente referenciado por um cursor `cur` (pré-condição: `cur->next != NULL`)
@@ -144,10 +152,10 @@ Passo 1) cria ponteiro para nó a ser removido
 Passo 2) ajusta o sucessor do cursor  (bypass)
 
                         (2)
-                     +-----------------+
-                     |                 |
+                     +----------------+
+                     |                |
           +---+---+  |    +---+---+   +--->+---+---+    
- ...  --->| X |  -|--+ \  | Y |  -|------->| Z |  -|--- ...
+ ...  --->| X |  -|--+ /  | Y |  -|------->| Z |  -|--- ...
           +---+---+       +---+---+        +---+---+  
             ^               ^ 
             |               |
@@ -168,6 +176,8 @@ Passo 3) apaga o nó pretendido da memória
                        
 
 ```
+**NOTA:** O cursor agora representa uma referência lógica para o nó seguinte ao nó removido, e que passa a ocupar aquela posição corrente.
+
 
 ```C
 Node *delete(Node *cur) {
@@ -178,9 +188,14 @@ Node *delete(Node *cur) {
     return cur;
 }
 ```
+**IMPORTANTE**: 
+* Uma vez obtida a referência para a posição a ser removida, a remoção em si requer apenas uma quantidade fixa (constante) de operações.
+* Porém, para chegar à posição desejada, precisamos percorrer a lista como explicado acima.
+
+
 
 
 <a name="referencias"></a>
 ### Referências
 
-[1] [Clifford Shaffer. Data structures and algorithm analysis in C++](http://people.cs.vt.edu/~shaffer/Book/)
+[1] [Clifford Shaffer. Data structures and algorithm analysis in C++, Cap 4](http://people.cs.vt.edu/~shaffer/Book/)
