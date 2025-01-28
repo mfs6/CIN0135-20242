@@ -20,7 +20,7 @@ public:
 	}
 	~Node()
 	{
-		cout << "deleting " << val << endl;
+		cout << "[deleting node " << val << "]" << endl;
 	}
 private:
 	int val;
@@ -112,37 +112,5 @@ int LinkedList::remove(int pos)
 	delete to_die;
 	sz--;
 	return ret;
-}
-
-
-int main()
-{
-	LinkedList list;
-
-	size_t n = 1 << 4;
-	for (int i = 0; i < n; i++) {
-		list.append(2 * i);
-	}
-	for (int i = 0; i < list.size(); i++) {
-		cout << "list[" << i << "]= " << list[i] << endl;
-	}
-	cout << endl;
-	size_t half = n / 2;
-	for (int i = 0; i < half; i++) {
-		list.remove(i);
-	}
-	for (int i = 0; i < list.size(); i++) {
-		cout << "list[" << i << "]= " << list[i] << endl;
-	}
-	cout << endl;
-	for (int i = 0; i < half; i++) {
-		list.insert(2 * i, 4 * i);
-	}
-	for (int i = 0; i < list.size(); i++) {
-		cout << "list[" << i << "]= " << list[i] << endl;
-	}
-	cout << endl;
-
-	cout << "size = " << list.size();
 }
 
