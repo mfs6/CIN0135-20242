@@ -15,29 +15,30 @@ Nov	Ter	12	Apresentação, Linguagens compitadas vs interpretadas, introdução 
 	Qui	21	Ponteiros e passagem por valor e referência
 	Ter	26	Ponteiros e alocação dinâmica 
 	Qui	28	Arrays e Structs
-Dez	Ter	3	Laboratório
-	Qui	5	ED: Listas simplesmente encadeadas
+Dez	Ter	03	Laboratório
+	Qui	05	ED: Listas simplesmente encadeadas
 	Ter	10	ED: Listas simplesmente encadeadas II
 	Ter	17	OO: Classes: abstração e encapsulamento
 	Qui	19	ED: Arrays dinâmicos
 Jan	Ter	28	ED: Filas e pilhas
-	Qui	30      OO: Herança
-Fev	Ter	4	OO: Programação genérica (Classes parametrizadas)
-	Qui	6	Laboratório
-	Ter	11	ED: Tabelas de Dispersão I - conceitos básicos, funções de dispersão
-	Qui	13	ED: Tableas de Dispersão II - resolução de colisão por encadeamento
-	Ter	18	ED: Tableas de Dispersão II - resolução de colisão por sondagem linear
-	Qui	20	ED: Tableas de Dispersão II - sondagem quadrática/aleatória e double hashing
-	Ter	25	ED: HashSets
-	Qui	27	Laboratório
-Mar	Ter	11	Laboratório
-	Qui	13	ED: Árvores: definição e representação
-	Ter	18	ED: Percursos em árvores
-	Qui	20	ED: Árvores binárias
+	Qui	30	OO: Composição e Herança
+Fev	Ter	04	OO: Programação genérica (Classes parametrizadas)
+	Qui	06	Laboratório
+	Ter	11  Laboratório
+	Qui	13	ED: Tabelas de Dispersão I - conceitos básicos, funções de dispersão
+	Ter	18	ED: Tabelas de Dispersão II - resolução de colisão por encadeamento
+	Qui	20	ED: Tabelas de Dispersão III - resolução de colisão por sondagem linear
+	Ter	25	ED: Tabelas de Dispersão IV - sondagem quadrática/aleatória e double hashing
+	Qui	27	ED: HashSets e Dicionários
+Mar	Qui 06  Laboratório
+	Ter	11  Laboratório  
+	Qui	13	ED: Árvores binárias: definição e representação
+	Ter	18	ED: Percursos em árvores binárias 
+	Qui	20	ED: Exemplos de aplicações de Árvores binárias
 	Ter	25	Laboratório
 	Qui	27	Laboratório
-Abr	Ter	1	
-	Qui	3	Prova final
+Abr	Ter	01	
+	Qui	03	Prova final
 ```
 
 ### Aulas
@@ -49,6 +50,12 @@ Abr	Ter	1
 * [Aula 05](./aulas/aula05/aula05.md)
 * [Aula 06](./aulas/aula06/aula06.md)
 * [Aula 07](./aulas/aula07/aula07.md)
+* [Aula 08](./aulas/aula07/aula08.md)
+* [Aula 09](./aulas/aula07/aula09.md)
+* [Aula 10](./aulas/aula07/aula10.md)
+* [Aula 11](./aulas/aula07/aula11.md)
+* [Aula 12](./aulas/aula07/aula12.md)
+* [Aula 13](./aulas/aula07/aula13.md)
 
 
 ### Referências
