@@ -21,7 +21,7 @@ Dez	Ter	03	Laboratório
 	Ter	17	OO: Classes: abstração e encapsulamento
 	Qui	19	ED: Arrays dinâmicos
 Jan	Ter	28	ED: Filas e pilhas
-	Qui	30	OO: Composição e Herança
+	Qui	30	OO: Composição e Herança e Polimorfismo
 Fev	Ter	04	OO: Programação genérica (Classes parametrizadas)
 	Qui	06	Laboratório
 	Ter	11  Laboratório
