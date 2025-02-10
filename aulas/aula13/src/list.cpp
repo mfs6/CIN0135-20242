@@ -6,6 +6,7 @@ using namespace std;
 class List
 {
 public:
+	virtual ~List() = default;
 	int size()
 	{
 		return sz;
@@ -130,6 +131,7 @@ ArrayList::ArrayList(int initial_cap)
 
 ArrayList::~ArrayList()
 {
+	cout << "destucting arraylist" << endl;
 	delete[] arr;
 }
 
@@ -201,8 +203,6 @@ int main()
 	int s = sum(&list);
 	cout << "sum linkedlist = " << s;
 
-
-
 	List *alist = new ArrayList(10);
 
 	for (int i = 0; i < n; i++) {
@@ -216,7 +216,9 @@ int main()
 	}
 
 	s = sum(alist);
-	cout << "sum linkedalist = " << s;
+	cout << "sum linked list = " << s;
+
+	delete alist;
 }
 
 

@@ -8,37 +8,38 @@
 ### Calendário (Tentativo)
 
 ```
-Mês	Dia	Data	Descrição
-Nov	Ter	12	Apresentação, Linguagens compitadas vs interpretadas, introdução à Linguagem C/C++
-	Qui	14	Ambiente de desenvolvimento, depuração e testes
-	Ter	19	Tipos primitivos, ponteiros
-	Qui	21	Ponteiros e passagem por valor e referência
-	Ter	26	Ponteiros e alocação dinâmica 
-	Qui	28	Arrays e Structs
-Dez	Ter	03	Laboratório
-	Qui	05	ED: Listas simplesmente encadeadas
-	Ter	10	ED: Listas simplesmente encadeadas II
-	Ter	17	OO: Classes: abstração e encapsulamento
-	Qui	19	ED: Arrays dinâmicos
-Jan	Ter	28	ED: Filas e pilhas
-	Qui	30	OO: Composição e Herança e Polimorfismo
-Fev	Ter	04	OO: Programação genérica (Classes parametrizadas)
-	Qui	06	Laboratório
-	Ter	11  Laboratório
-	Qui	13	ED: Tabelas de Dispersão I - conceitos básicos, funções de dispersão
-	Ter	18	ED: Tabelas de Dispersão II - resolução de colisão por encadeamento
-	Qui	20	ED: Tabelas de Dispersão III - resolução de colisão por sondagem linear
-	Ter	25	ED: Tabelas de Dispersão IV - sondagem quadrática/aleatória e double hashing
-	Qui	27	ED: HashSets e Dicionários
-Mar	Qui 06  Laboratório
-	Ter	11  Laboratório  
-	Qui	13	ED: Árvores binárias: definição e representação
-	Ter	18	ED: Percursos em árvores binárias 
-	Qui	20	ED: Exemplos de aplicações de Árvores binárias
-	Ter	25	Laboratório
-	Qui	27	Laboratório
-Abr	Ter	01	
-	Qui	03	Prova final
+Mês  Dia  Data  Descrição
+Nov  Ter  12    Apresentação, Linguagens compitadas vs interpretadas, introdução à Linguagem C/C++
+     Qui  14    Ambiente de desenvolvimento, depuração e testes
+     Ter  19    Tipos primitivos, ponteiros
+     Qui  21    Ponteiros e passagem por valor e referência
+     Ter  26    Ponteiros e alocação dinâmica 
+     Qui  28    Arrays e Structs
+Dez  Ter  03    Laboratório
+     Qui  05    ED: Listas simplesmente encadeadas
+     Ter  10    ED: Listas simplesmente encadeadas II
+     Ter  17    OO: Classes: abstração e encapsulamento
+     Qui  19    ED: Arrays dinâmicos
+Jan  Ter  28    ED: Filas e pilhas
+     Qui  30    OO: Composição e Herança e Polimorfismo
+Fev  Ter  04    OO: Programação genérica (Classes parametrizadas)
+     Ter  11    OO: Programação genérica II
+     Qui  13    Laboratório
+     Ter  18    ED: Tabelas de Dispersão I - conceitos básicos, funções de dispersão
+     Qui  20    ED: Tabelas de Dispersão II - resolução de colisão por encadeamento
+     Ter  25    ED: Tabelas de Dispersão III - resolução de colisão por sondagem linear
+     Qui  27    ED: Tabelas de Dispersão IV - sondagem quadrática/aleatória e double hashing
+Mar  Ter  11    ED: HashSets e Dicionários
+     Qui  13    Laboratório
+     Ter  18    Laboratório  
+     Qui  20    ED: Árvores binárias: definição e representação
+     Ter  25    ED: Percursos em árvores binárias 
+     Qui  27    ED: Exemplos de aplicações de Árvores binárias
+Abr  Ter  01    Laboratório
+     Qui  03    Laboratório
+     Ter  08    
+     Qui  10    Prova final
+ 
 ```
 
 ### Aulas
