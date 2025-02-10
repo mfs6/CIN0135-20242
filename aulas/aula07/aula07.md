@@ -31,3 +31,9 @@
 * Ler esse arquivo para um array de structs do tipo Aluno
 * Calcular a média da turma
 * Imprimir a lista de alunos com nota maior ou igual à média
+
+
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../aula06/aula06.md) [[Próximo >]](../aula08/aula08.md)  [[Índice ^]](../index.md)
+
+

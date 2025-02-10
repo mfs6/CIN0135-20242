@@ -42,23 +42,7 @@ Abr  Ter  01    Laboratório
  
 ```
 
-### Aulas
-
-* [Aula 01](./aulas/aula01/aula01.md)
-* [Aula 02](./aulas/aula02/aula02.md)
-* [Aula 03](./aulas/aula03/aula03.md)
-* [Aula 04](./aulas/aula04/aula04.md)
-* [Aula 05](./aulas/aula05/aula05.md)
-* [Aula 06](./aulas/aula06/aula06.md)
-* [Aula 07](./aulas/aula07/aula07.md)
-* [Aula 08](./aulas/aula07/aula08.md)
-* [Aula 09](./aulas/aula07/aula09.md)
-* [Aula 10](./aulas/aula07/aula10.md)
-* [Aula 11](./aulas/aula07/aula11.md)
-* [Aula 12](./aulas/aula07/aula12.md)
-* [Aula 13](./aulas/aula07/aula13.md)
+### [Aulas](./aulas/index.md)
 
 
-### Referências
 
-[1] [Kerningan & Ritchie. The C Programming Language, 2nd ed.](https://ia903407.us.archive.org/35/items/the-ansi-c-programming-language-by-brian-w.-kernighan-dennis-m.-ritchie.org/The%20ANSI%20C%20Programming%20Language%20by%20Brian%20W.%20Kernighan%2C%20Dennis%20M.%20Ritchie.pdf) (da [Wikipedia](https://en.wikipedia.org/wiki/The_C_Programming_Language))

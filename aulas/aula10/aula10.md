@@ -144,3 +144,9 @@ Repare que, nesta versão, usamos o método privado `LinkedList::locate(int pos)
 <a id="aula10ref2"></a>[2] [Edward V. Berard. Abstraction, Encapsulation, and Information Hiding](https://www.tonymarston.co.uk/php-mysql/abstraction.txt)
 
 [3] [B.Stroustroup. A Tour of C++.](https://www.stroustrup.com/Tour.html)
+
+
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../aula09/aula09.md) [[Próximo >]](../aula11/aula11.md)  [[Índice ^]](../index.md)
+
+

@@ -90,3 +90,9 @@ void ArrayList::check_and_double() {
 ### Referências
 
 [1] [Clifford Shaffer. Data structures and algorithm analysis in C++, Cap 4](http://people.cs.vt.edu/~shaffer/Book/)
+
+
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../aula10/aula10.md) [[Próximo >]](../aula12/aula12.md)  [[Índice ^]](../index.md)
+
+

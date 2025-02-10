@@ -33,3 +33,9 @@ Tipo primitivo para endereços de memória.
 
 **Demo** [./src/pointer.c](./src/pointer.c)
 
+
+
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../aula02/aula02.md) [[Próximo >]](../aula04/aula04.md)  [[Índice ^]](../index.md)
+
+
