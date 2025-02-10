@@ -45,4 +45,9 @@ Abr  Ter  01    Laboratório
 ### [Aulas](./aulas/index.md)
 
 
+### Referências
+
+[1] [Kerningan & Ritchie. The C Programming Language, 2nd ed.](https://ia903407.us.archive.org/35/items/the-ansi-c-programming-language-by-brian-w.-kernighan-dennis-m.-ritchie.org/The%20ANSI%20C%20Programming%20Language%20by%20Brian%20W.%20Kernighan%2C%20Dennis%20M.%20Ritchie.pdf) (da [Wikipedia](https://en.wikipedia.org/wiki/The_C_Programming_Language))
+
+[2] [B.Stroustroup. A Tour of C++.](https://www.stroustrup.com/Tour.html)
 
