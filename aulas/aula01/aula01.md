@@ -107,6 +107,10 @@ Novamente, o arquivo executável `a.out` será recriado.
 
 
 
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../index.md) [[Próximo >]](../aula02/aula02.md)  [[Índice ^]](../index.md)
+
+
 
 
 
