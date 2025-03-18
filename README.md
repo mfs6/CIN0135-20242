@@ -31,10 +31,10 @@ Fev  Ter  04    OO: Programação genérica (Classes parametrizadas)
      Qui  27    ED: Tabelas de Dispersão IV - sondagem quadrática/aleatória e double hashing
 Mar  Ter  11    ED: HashSets e Dicionários
      Qui  13    Laboratório
-     Ter  18    Laboratório  
-     Qui  20    ED: Árvores binárias: definição e representação
-     Ter  25    ED: Percursos em árvores binárias 
-     Qui  27    ED: Exemplos de aplicações de Árvores binárias
+     Ter  18    ED: Árvores binárias: definição e representação  
+     Qui  20    ED: Percursos em árvores binárias
+     Ter  25    ED: Exemplos de aplicações de Árvores binárias
+     Qui  27    Laboratório
 Abr  Ter  01    Laboratório
      Qui  03    Laboratório
      Ter  08    
