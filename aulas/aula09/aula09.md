@@ -1,4 +1,4 @@
-## Aula 07,  10-12-2024 
+## Aula 09,  10-12-2024 
 
 ## Listas Encadeadas II
 
@@ -199,3 +199,10 @@ Node *delete(Node *cur) {
 ### Referências
 
 [1] [Clifford Shaffer. Data structures and algorithm analysis in C++, Cap 4](http://people.cs.vt.edu/~shaffer/Book/)
+
+
+
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../aula08/aula08.md) [[Próximo >]](../aula10/aula10.md)  [[Índice ^]](../index.md)
+
+

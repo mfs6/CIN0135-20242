@@ -96,3 +96,9 @@ int main() {
 ### Referências
 
 [1] [Clifford Shaffer. Data structures and algorithm analysis in C++](http://people.cs.vt.edu/~shaffer/Book/)
+
+
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../aula07/aula07.md) [[Próximo >]](../aula09/aula09.md)  [[Índice ^]](../index.md)
+
+

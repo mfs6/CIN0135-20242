@@ -47,3 +47,7 @@ Enter a positive integer: 42
 
 
 
+
+___
+[[Código-fonte: /src]](./src)   [[< Anterior]](../aula01/aula01.md) [[Próximo >]](../aula03/aula03.md)  [[Índice ^]](../index.md)
+
